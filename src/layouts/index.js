@@ -1,12 +1,25 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 import Helmet from 'react-helmet';
-
 import Header from '../components/Header';
 import './index.css';
 
+const Wrapper = styled.div`
+  height: 100%;
+  width: 100%;
+`;
+
+const ContentWrapper = styled.div`
+  margin: 5rem auto;
+  min-width: 200px;
+  width: 70%;
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 20;
+  top: 5rem;
+`;
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <Wrapper>
     <Helmet
       title="Gatsby Site"
       meta={[
@@ -14,18 +27,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'sample, something' }
       ]}
     />
-    <Header />
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '0px 1.0875rem 1.45rem',
-        paddingTop: 0
-      }}
-    >
-      {children()}
-    </div>
-  </div>
+    <Header style={{ marginBottom: '4rem' }} />
+    <ContentWrapper>{children()}</ContentWrapper>
+  </Wrapper>
 );
 
 TemplateWrapper.propTypes = {

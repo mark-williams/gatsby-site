@@ -7,6 +7,9 @@ const HeaderContainer = styled.div`
   padding: 0;
   margin-bottom: 2rem;
   box-shadow: 0 0.2rem 0.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 `;
 
 const HeaderContent = styled.div`

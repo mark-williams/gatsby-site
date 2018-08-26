@@ -4,8 +4,34 @@ import Link from 'gatsby-link';
 const IndexPage = () => (
   <div>
     <h1>Hello!</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+
+    <p>
+      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur
+      arcu erat, accumsan id imperdiet et, porttitor at sem. Vestibulum ante
+      ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+      Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet
+      ligula. Nulla quis lorem ut libero malesuada feugiat.
+    </p>
+
+    <p>
+      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus
+      suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id
+      dui posuere blandit. Nulla quis lorem ut libero malesuada feugiat.
+    </p>
+
+    <p>
+      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur
+      aliquet quam id dui posuere blandit. Proin eget tortor risus. Donec
+      sollicitudin molestie malesuada.
+    </p>
+
+    <p>
+      Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Lorem
+      ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies ligula
+      sed magna dictum porta. Vivamus suscipit tortor eget felis porttitor
+      volutpat.
+    </p>
+
     <Link to="/page-2/">Go to page 2</Link>
   </div>
 );
