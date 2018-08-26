@@ -8,9 +8,12 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "hoek": "^5.0.4",
+    "lodash": "^4.17.10",
     "mixin-deep": "^2.0.0",
     "react-helmet": "^5.2.0",
-    "serve": "^10.0.0"
+    "serve": "^10.0.0",
+    "sshpk": "^1.14.2",
+    "url-parse": "^1.4.3"
   },
   "keywords": [
     "gatsby"
