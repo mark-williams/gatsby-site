@@ -2,9 +2,11 @@ import React from 'react';
 import Link from 'gatsby-link';
 import { Section } from '../components/Section';
 import { SectionBody } from '../components/SectionBody';
+import Hero from '../components/Hero';
 
 const IndexPage = () => (
   <div>
+    <Hero />
     <Section>
       <SectionBody>
         <h1>Hello!</h1>

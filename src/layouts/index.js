@@ -11,12 +11,12 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  margin: 7rem auto;
+  margin: 0 auto;
   min-width: 200px;
   width: 100%;
   padding: 0;
   padding-top: 20;
-  top: 5rem;
+  top: 0;
 `;
 const TemplateWrapper = ({ children }) => (
   <Wrapper>
