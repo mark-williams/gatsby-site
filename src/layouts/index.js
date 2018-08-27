@@ -11,10 +11,10 @@ const Wrapper = styled.div`
 `;
 
 const ContentWrapper = styled.div`
-  margin: 5rem auto;
+  margin: 7rem auto;
   min-width: 200px;
-  width: 70%;
-  padding: 0px 1.0875rem 1.45rem;
+  width: 100%;
+  padding: 0;
   padding-top: 20;
   top: 5rem;
 `;
