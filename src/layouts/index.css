@@ -93,7 +93,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Segoe UI', onospace;
+  font-family: 'Segoe UI', monospace;
   font-size: 1em;
 }
 figure {
@@ -198,8 +198,8 @@ html {
   box-sizing: inherit;
 }
 body {
-  color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Segoe UI', if;
+  color: hsla(0, 0%, 22%, 0.8);
+  font-family: 'Segoe UI', helvetica, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
