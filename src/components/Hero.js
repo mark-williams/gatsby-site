@@ -7,7 +7,6 @@ const Wrapper = styled.div`
   height: 600px;
   background-image: url(${heroImage});
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
 `;
 const Hero = () => <Wrapper />;
