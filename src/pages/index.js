@@ -3,11 +3,12 @@ import Link from 'gatsby-link';
 import { Section } from '../components/Section';
 import { SectionBody } from '../components/SectionBody';
 import Hero from '../components/Hero';
+import colours from '../style/colours';
 
 const IndexPage = () => (
   <div>
     <Hero />
-    <Section backgroundColor="rebeccapurple" color="white">
+    <Section backgroundColor={colours.color1} color={colours.white}>
       <SectionBody>
         <h1>Hello!</h1>
 
@@ -24,6 +25,7 @@ const IndexPage = () => (
 
     <Section>
       <SectionBody>
+        <h2>Services</h2>
         <p>
           Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
           Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur
@@ -37,8 +39,10 @@ const IndexPage = () => (
           risus. Donec sollicitudin molestie malesuada.
         </p>
       </SectionBody>
-
+    </Section>
+    <Section>
       <SectionBody>
+        <h2>About</h2>
         <p>
           Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
