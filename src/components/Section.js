@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 export const Section = styled.section`
-  background-color: hsl(0, 0%, 76%);
+  background-color: ${props => props.backgroundColor || 'white'};
+  color: ${props => props.color || 'navy'};
   width: 100%;
-  border-bottom: 1px solid lightgray;
   padding: 1.4rem 0 1.4rem 0;
-  margin-bottom: 2rem;
+  margin-bottom: 0;
 `;

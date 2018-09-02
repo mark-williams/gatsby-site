@@ -7,7 +7,7 @@ import Hero from '../components/Hero';
 const IndexPage = () => (
   <div>
     <Hero />
-    <Section>
+    <Section backgroundColor="rebeccapurple" color="white">
       <SectionBody>
         <h1>Hello!</h1>
 
