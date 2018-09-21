@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import Header from '../components/Header';
-import './index.css';
+import '../style/index.css';
 
 const Wrapper = styled.div`
   height: 100%;
@@ -28,12 +28,12 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header style={{ marginBottom: '4rem' }} />
-    <ContentWrapper>{children()}</ContentWrapper>
+    <ContentWrapper>{children}</ContentWrapper>
   </Wrapper>
 );
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func
+  children: PropTypes.array
 };
 
 export default TemplateWrapper;

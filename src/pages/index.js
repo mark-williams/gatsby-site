@@ -1,12 +1,13 @@
 import React from 'react';
-import Link from 'gatsby-link';
+import { Link } from 'gatsby';
+import Layout from '../components/layout';
 import { Section } from '../components/Section';
 import { SectionBody } from '../components/SectionBody';
 import Hero from '../components/Hero';
 import colours from '../style/colours';
 
 const IndexPage = () => (
-  <div>
+  <Layout>
     <Hero />
     <Section backgroundColor={colours.color1} color={colours.white}>
       <SectionBody>
@@ -53,7 +54,7 @@ const IndexPage = () => (
         <Link to="/page-2/">Go to page 2</Link>
       </SectionBody>
     </Section>
-  </div>
+  </Layout>
 );
 
 export default IndexPage;
