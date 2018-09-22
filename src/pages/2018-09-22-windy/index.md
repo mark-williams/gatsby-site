@@ -1,9 +1,9 @@
 ---
-path: "/windy"
-date: "2018-09-22T03:15:59.165Z"
-title: "Hello"
+path: '/windy'
+date: '2018-09-22T03:15:59.165Z'
+title: 'Very windy'
 tags: ['intro']
-excerpt: "Windy today!"
+excerpt: 'Windy today!'
 ---
 
 # Windy today
