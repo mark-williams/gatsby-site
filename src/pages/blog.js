@@ -10,7 +10,11 @@ const BlogsList = styled.div`
   margin-bottom: 2rem;
 `;
 
-const BlogItem = ({ item }) => <div>{item.frontmatter.title}</div>;
+const BlogItem = ({ item }) => (
+  <div>
+    <Link to={item.frontmatter.path}>{item.frontmatter.title}</Link>
+  </div>
+);
 BlogItem.propTypes = {
   item: PropTypes.object
 };
