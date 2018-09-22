@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
+import styled from 'styled-components';
 import Layout from '../components/layout';
 import { Section } from '../components/Section';
 import { SectionBody } from '../components/SectionBody';
+
+const BlogsList = styled.div`
+  margin-bottom: 2rem;
+`;
 
 const BlogItem = ({ item }) => <div>{item.frontmatter.title}</div>;
 BlogItem.propTypes = {
@@ -17,11 +22,11 @@ const BlogsPage = ({ data }) => {
       <Section>
         <SectionBody>
           <h1>Blog</h1>
-          <div>
+          <BlogsList>
             {posts.map(({ node }) => (
               <BlogItem key={node.id} item={node} />
             ))}
-          </div>
+          </BlogsList>
           <Link to="/">Go back to the homepage</Link>
         </SectionBody>
       </Section>
