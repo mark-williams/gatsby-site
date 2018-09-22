@@ -15,7 +15,7 @@ const ContentWrapper = styled.div`
   min-width: 200px;
   width: 100%;
   padding: 0;
-  padding-top: 20;
+  padding-top: 4rem;
   top: 0;
 `;
 const TemplateWrapper = ({ children }) => (
