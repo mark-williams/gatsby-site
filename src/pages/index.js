@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import Layout from '../components/layout';
-import { Section } from '../components/Section';
-import { SectionBody } from '../components/SectionBody';
+import Section from '../components/Section';
+import SectionBody from '../components/SectionBody';
 import Hero from '../components/Hero';
 import colours from '../style/colours';
 

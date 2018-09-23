@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { Link, graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
-import { Section } from '../components/Section';
-import { SectionBody } from '../components/SectionBody';
+import Section from '../components/Section';
+import SectionBody from '../components/SectionBody';
 
 const BlogsList = styled.div`
   margin-bottom: 2rem;
