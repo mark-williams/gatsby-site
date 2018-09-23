@@ -41,11 +41,16 @@ a {
   background-color: transparent;
   text-decoration: none;
   -webkit-text-decoration-skip: objects;
+  color: hsl(240, 38%, 65%);
 }
 a:active,
 a:hover {
   outline-width: 0;
 }
+a:visited {
+  color: hsl(240, 38%, 65%);
+}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

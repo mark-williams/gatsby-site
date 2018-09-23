@@ -11,6 +11,11 @@ const HeaderContainer = styled.div`
   top: 0;
   width: 100%;
   height: 4rem;
+
+  a,
+  a:visited {
+    color: white;
+  }
 `;
 
 const HeaderContent = styled.div`
