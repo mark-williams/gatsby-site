@@ -10,6 +10,7 @@ const HeaderContainer = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
+  height: 4rem;
 `;
 
 const HeaderContent = styled.div`
@@ -20,12 +21,35 @@ const HeaderContent = styled.div`
   a {
     color: hsl(0, 0%, 92%);
   }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const Links = styled.ul`
+  font-size: 1rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    float: left;
+    margin-left: 1.4rem;
+  }
 `;
 
 const Header = () => (
   <HeaderContainer>
     <HeaderContent>
       <Link to="/">Gatsby</Link>
+      <Links>
+        <li>
+          <Link to={'/services'}>Services</Link>
+        </li>
+        <li>
+          <Link to={'/blog'}>Blog</Link>
+        </li>
+      </Links>
     </HeaderContent>
   </HeaderContainer>
 );

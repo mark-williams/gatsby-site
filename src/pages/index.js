@@ -39,6 +39,7 @@ const IndexPage = () => (
           Curabitur aliquet quam id dui posuere blandit. Proin eget tortor
           risus. Donec sollicitudin molestie malesuada.
         </p>
+        <Link to="/services">More...</Link>
       </SectionBody>
     </Section>
     <Section>
@@ -50,8 +51,6 @@ const IndexPage = () => (
           ultricies ligula sed magna dictum porta. Vivamus suscipit tortor eget
           felis porttitor volutpat.
         </p>
-
-        <Link to="/page-2/">Go to page 2</Link>
       </SectionBody>
     </Section>
   </Layout>
