@@ -11,6 +11,11 @@ const BlogsList = styled.div`
   margin-bottom: 2rem;
 `;
 
+const BlogItemContainer = styled.div`
+  margin-bottom: 2rem;
+  border-bottom: solid 1px #ddd;
+`;
+
 const Excerpt = styled.div`
   font-size: 0.8em;
   font-color: ${colours.lightGrey};
@@ -19,18 +24,17 @@ const Excerpt = styled.div`
 
 const Date = styled.div`
   font-size: 0.6rem;
-  margin-bottom: 2rem;
 `;
 
 const BlogItem = ({ item }) => (
-  <div>
+  <BlogItemContainer>
     <Link to={item.frontmatter.path}>{item.frontmatter.title}</Link>
     <Excerpt>
       {item.frontmatter.excerpt}
       ...
     </Excerpt>
     <Date>{item.frontmatter.date}</Date>
-  </div>
+  </BlogItemContainer>
 );
 BlogItem.propTypes = {
   item: PropTypes.object
