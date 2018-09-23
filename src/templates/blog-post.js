@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 import { graphql } from 'gatsby';
 
 const Template = ({ data }) => {
@@ -7,6 +8,7 @@ const Template = ({ data }) => {
   const { frontmatter, html } = post;
   return (
     <div>
+      <Helmet title={`${frontmatter.title} (Blog)`} />
       <h2>{frontmatter.title}</h2>
       <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
