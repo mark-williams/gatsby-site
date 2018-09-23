@@ -5,14 +5,31 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import Section from '../components/Section';
 import SectionBody from '../components/SectionBody';
+import colours from '../style/colours';
 
 const BlogsList = styled.div`
+  margin-bottom: 2rem;
+`;
+
+const Excerpt = styled.div`
+  font-size: 0.8em;
+  font-color: ${colours.lightGrey};
+  margin-bottom: 0.4rem;
+`;
+
+const Date = styled.div`
+  font-size: 0.6rem;
   margin-bottom: 2rem;
 `;
 
 const BlogItem = ({ item }) => (
   <div>
     <Link to={item.frontmatter.path}>{item.frontmatter.title}</Link>
+    <Excerpt>
+      {item.frontmatter.excerpt}
+      ...
+    </Excerpt>
+    <Date>{item.frontmatter.date}</Date>
   </div>
 );
 BlogItem.propTypes = {
